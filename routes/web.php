@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// rota que retorna uma ola
+Route::get('/olamundo', function () {
+    return "ola mundo";
+});
+
+Route::get('/faleconosco/{id?}', function ($id = null)
+    { return "recebi o valor = $id"; }
+);
+
+Route::post('/contato', 
+    ['uses'=>'App\Http\Controllers\contatoController@index']);

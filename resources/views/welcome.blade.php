@@ -117,7 +117,13 @@
                         </div>
                     </div>
                 </div>
-
+                <form action='/contato' method='post'>
+                            {{ csrf_field() }}
+                            <!-- cria um input oculto com token -->
+                            nome:<input type='text' name='nome' value='' style='background-color:blue'><br>
+                            senha:<input type='password' name='senha' value='' style='background-color:blue'><br>
+                            <input type='submit' value='ok'>
+                </form>
                 <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
                     <div class="text-center text-sm sm:text-left">
                         &nbsp;
