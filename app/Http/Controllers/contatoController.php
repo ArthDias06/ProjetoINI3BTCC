@@ -16,3 +16,4 @@ class contatoController extends Controller
             return view("contato/index",compact('contatos'));
     }
 }
+
