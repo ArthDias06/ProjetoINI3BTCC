@@ -11,7 +11,8 @@ class contatoController extends Controller
         //return "Estou no controle !!";
         //dd($req);
         $contatos = [
-            [ "nome"=>$req['nome'],"cel"=>$req['senha']]];
+            [ "tema"=>"Interface acessível","titulo"=>"App mobile com direitos da pessoa deficiente"],
+            [ "tema"=>"Pedofilia", "titulo"=>"App mobile com orientações gerais aos pais"]];
             return view("contato/index",compact('contatos'));
     }
 }
