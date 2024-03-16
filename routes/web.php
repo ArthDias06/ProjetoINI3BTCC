@@ -32,3 +32,15 @@ Route::post('/contato', function () {
 
 Route::post('/contato', 
     ['uses'=>'App\Http\Controllers\contatoController@index']);
+
+Route::get('/pagina/Pagina1', function(){
+    return view('/pagina/Pagina1');
+});
+
+Route::get('/pagina/Pagina2', function(){
+    return view('/pagina/Pagina2');
+});
+
+Route::get('/pagina/Pagina3', function(){
+    return view('/pagina/Pagina3');
+});
