@@ -32,4 +32,3 @@ Route::post('/contato', function () {
 
 Route::post('/contato', 
     ['uses'=>'App\Http\Controllers\contatoController@index']);
-    
