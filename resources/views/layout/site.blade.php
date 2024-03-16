@@ -1,5 +1,5 @@
 <html>
-    <hader><title>@yield('titulo')</header>
+    <hader><title>@yield('titulo')</title></header>
     
     <body>
         @yield('conteudo')
