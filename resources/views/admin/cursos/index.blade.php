@@ -20,7 +20,7 @@
 <td>{{ $row->descricao }}</td>
 <td>{{ $row->publicado }}</td><td>{{ $row->valor }}</td>
 <td><img src="{{ asset($row->imagem) }}"
-alt="{{ $row->titulo }}"></td>
+alt="{{ $row->titulo }}" width="80px"></td>
 <td> <!-- COLUNA COM ALTERAR E EXCLUIR -->
 <a class='btn deep-orange'
 href="{{ route('admin.cursos.editar',$row->id) }}">Alterar</a>
