@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -17,7 +18,7 @@ class LoginController extends Controller
         // redireciona para a home, mas agora, logado !
             return redirect()->route('site.home');
         } else { // pede usuario e senha novamente
-            return redirect()->route('login.index');
+            return redirect()->route('login');
         }
     }
     
